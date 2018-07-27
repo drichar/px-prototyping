@@ -1,17 +1,13 @@
 <template lang="html">
   <div class="px-sidebar">
     <div class="px-sidebar-order-overview">
-      <div class="px-sidebar-order-card card">
+      <div class="px-sidebar-order-card card" v-for="item in [1,2,3]" :key="item">
         <img class="card-img-top" src="http://placehold.it/640x400/?text=Preview" alt="" />
         <div class="card-body">
+          <p class="card-text asset-name">Asset Name</p>
           <p class="card-text project-name">Project Name</p>
-          <p class="card-text studio-name">Studio Name</p>
         </div>
       </div>
-      <nav class="nav">
-        <a class="nav-link active">Order Details</a>
-        <a class="nav-link">Translation</a>
-      </nav>
     </div>
   </div>
 </template>
@@ -43,27 +39,6 @@ export default {
     }
   }
 
-  .nav-link {
-    display: flex;
-    flex-flow: column;
-    align-items: left;
-    justify-content: center;
-    padding: 1rem;
-    width: 12rem;
-    height: 4rem;
-    color: hsla(0,0,100,0.5) !important;
-    cursor: pointer;
-
-    &:hover {
-      color: hsla(0,0,100,0.5);
-    }
-
-    &.active {
-      color: white !important;
-      font-weight: 700;
-    }
-  }
-
   .px-sidebar-order-overview {
     .px-sidebar-order-card {
       margin: 1rem;
@@ -79,9 +54,13 @@ export default {
         font-size: 0.8rem;
         margin-bottom: 0;
 
-        &.studio-name {
+        &.project-name {
           color: hsla(0,0,100,0.33);
         }
+      }
+
+      &:first-child {
+        border: 2px solid blue;
       }
     }
   }

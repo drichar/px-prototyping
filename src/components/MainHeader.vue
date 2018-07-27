@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="px-header">
     <h4 class="px-header-title">
-      <!-- <span>Page Title /</span>  -->
-      Page Title
+      <span>Place Order /</span>
+      Glossy Bastard Int'l 20
     </h4>
     <nav class="nav">
       <a class="nav-link" href="#" v-for="item in [1,2,3,4,5]" :key="item">
