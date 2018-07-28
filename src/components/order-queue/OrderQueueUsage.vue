@@ -203,5 +203,25 @@ export default {
   p {
     color: #999;
   }
+
+  .table {
+    border-top: 0;
+
+    th, td {
+      vertical-align: middle;
+    }
+
+    th:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4) {
+      text-align: center;
+    }
+
+    .px-order-usage-qty {
+      width: 4rem;
+    }
+  }
 }
 </style>
