@@ -10,11 +10,15 @@
             <label for="">Broadcast</label>
             <b-btn variant="primary" v-b-modal.OrderQueueUsageBroadcast>Settings</b-btn>
           </div>
+        </div>
+        <div class="row">
           <div class="col-lg p-3 active">
             <label for="">Online</label>
             <p>1080p, 720p, 480p, 360p, YouTube, Facebook, Instagram</p>
             <b-button variant="primary" v-b-modal.OrderQueueUsageOnline>Settings</b-button>
           </div>
+        </div>
+        <div class="row">
           <div class="col-lg p-3 active">
             <label for="">Theatrical</label>
             <p>2D Flat, Download Link, 1 USB to Philip Zlotorynski and Doug Richar</p>
