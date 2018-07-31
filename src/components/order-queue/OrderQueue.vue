@@ -4,6 +4,10 @@
 
     <div class="px-order-panes">
       <div class="px-order-form">
+        <b-alert show dismissible>
+          Would you like to apply settings from a previous order?
+          <a href="#" class="btn btn-sm btn-info float-right">View Settings</a>
+        </b-alert>
         <div role="tablist">
           <OrderQueueDate/>
           <OrderQueueLocalization/>
@@ -64,6 +68,14 @@ export default {
 
 .px-order-form {
   overflow-y: auto;
+
+  .alert {
+    margin: 0 1.5rem 1.5rem;
+
+    .btn {
+      margin-top: -3px;
+    }
+  }
 
   .card {
     margin: 0 1.5rem 0 5.5rem;
