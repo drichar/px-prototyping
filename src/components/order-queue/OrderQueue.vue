@@ -84,12 +84,16 @@ export default {
 
     .card-header {
       position: relative;
-      background: lighten(#007bff, 47%);
+      background: white;
       border: 0;
       border-radius: 0;
 
+      a {
+        font-weight: bold;
+      }
+
       &::after {
-        content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'><path fill='white' d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/></svg>");;
+        content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'><path fill='#ffffff' d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/></svg>");;
         position: absolute;
         top: 50%;
         left: -3rem;
@@ -132,6 +136,7 @@ export default {
 
         &::after {
           background: #007bff;
+          border-color: #007bff;
         }
       }
 
@@ -144,12 +149,14 @@ export default {
           background: white;
 
           a {
+            font-weight: normal;
             color: #eee;
             pointer-events: none;
           }
 
           &::after {
             background: #eee;
+            border-color: #eee;
           }
         }
       }
@@ -157,6 +164,7 @@ export default {
       & + .card {
         .card-header {
           a {
+            font-weight: bold;
             color: #007bff;
             pointer-events: all;
           }
