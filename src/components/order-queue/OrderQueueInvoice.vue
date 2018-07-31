@@ -110,6 +110,20 @@ export default {
 </script>
 
 <style lang="scss">
+::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 0.5rem;
+}
+
 #OrderQueueInvoice {
   display: grid;
   grid-template: auto 1fr auto auto / 1fr;
