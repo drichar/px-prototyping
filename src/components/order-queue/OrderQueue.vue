@@ -90,6 +90,7 @@ export default {
 
       a {
         font-weight: bold;
+        text-decoration: none;
       }
 
       &::after {
