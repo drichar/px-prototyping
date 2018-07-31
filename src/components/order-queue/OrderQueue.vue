@@ -194,7 +194,9 @@ export default {
           }
 
           &::after {
-            background: #eee;
+            background: white;
+            color: #007bff;
+            border: 2px solid #007bff;
           }
         }
       }
