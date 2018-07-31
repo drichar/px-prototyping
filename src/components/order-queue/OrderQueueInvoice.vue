@@ -148,6 +148,7 @@ export default {
 
   .px-order-invoice-table {
     padding: 0 1.5rem;
+    margin-right: 0.5rem;
     overflow-y: auto;
 
     .table {

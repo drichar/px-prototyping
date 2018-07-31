@@ -85,8 +85,8 @@
         </div>
         <div class="row mb-4">
           <div class="col">
-            <label for="">Territory</label>
-            <select class="form-control">
+            <label for="territory">Territory</label>
+            <select id="territory" class="form-control">
               <option selected>Select Territory&hellip;</option>
               <option value="0" label="Albania">Albania</option>
               <option value="1" label="All Countries">All Countries</option>
