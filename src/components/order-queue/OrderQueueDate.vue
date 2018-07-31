@@ -38,7 +38,4 @@ export default {
 </script>
 
 <style lang="scss">
-.card {
-  margin-left: 3rem;
-}
 </style>

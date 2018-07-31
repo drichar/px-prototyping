@@ -191,6 +191,7 @@ export default {
 #OrderQueueUsage {
   .row {
     margin: 0;
+    margin-bottom: 1rem;
   }
 
   .card-body {

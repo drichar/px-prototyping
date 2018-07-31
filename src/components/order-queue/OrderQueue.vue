@@ -110,6 +110,10 @@ export default {
       }
     }
 
+    .card-body {
+      max-width: 30rem;
+    }
+
     &.active {
       &::before {
         background: #eee;
