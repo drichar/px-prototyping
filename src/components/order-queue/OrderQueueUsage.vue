@@ -29,7 +29,7 @@
             <b-button variant="primary" v-b-modal.OrderQueueUsageTheatrical>Settings</b-button>
           </div>
 
-          <b-modal id="OrderQueueUsageBroadcast" title="Broadcast Settings">
+          <b-modal id="OrderQueueUsageBroadcast" title="Broadcast Settings" cancel-variant="outline-secondary">
             <form>
               <div class="form-group">
                 <div class="form-check">
@@ -64,7 +64,7 @@
             </form>
           </b-modal>
 
-          <b-modal id="OrderQueueUsageOnline" title="Online Settings">
+          <b-modal id="OrderQueueUsageOnline" title="Online Settings" cancel-variant="outline-secondary">
             <form>
               <div class="form-group">
                 <div class="form-check">
@@ -111,7 +111,7 @@
             </form>
           </b-modal>
 
-          <b-modal id="OrderQueueUsageTheatrical" size="lg" title="Theatrical Settings">
+          <b-modal id="OrderQueueUsageTheatrical" size="lg" title="Theatrical Settings" cancel-variant="outline-secondary">
             <form>
               <table class="table table-borderless table-striped">
                 <thead>
