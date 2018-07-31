@@ -1,9 +1,13 @@
 <template lang="html">
-  <b-card no-body>
+  <b-card no-body :class="showCollapse ? 'active' : null">
     <b-card-header header-tag="header" role="tab">
-      <a href="#" v-b-toggle.OrderQueueSubtitling>Subtitling</a>
+      <a href="#"
+        @click="showCollapse = true"
+        :class="showCollapse ? 'collapsed' : null"
+        aria-controls="OrderQueueSubtitling"
+        :aria-expanded="showCollapse ? 'true' : 'false'">Subtitling</a>
     </b-card-header>
-    <b-collapse id="OrderQueueSubtitling" visible accordion="my-accordion" role="tabpanel">
+    <b-collapse id="OrderQueueSubtitling" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
         <div class="row mb-4">
           <div class="col">
@@ -51,6 +55,7 @@ export default {
   name: 'OrderQueueSubtitling',
   data () {
     return {
+      showCollapse: false,
       dialogue: {
         selected: 'dialogueOV',
         options: [

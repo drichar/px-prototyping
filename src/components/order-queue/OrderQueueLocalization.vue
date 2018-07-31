@@ -1,9 +1,13 @@
 <template lang="html">
-  <b-card no-body>
+  <b-card no-body :class="showCollapse ? 'active' : null">
     <b-card-header header-tag="header" role="tab">
-      <a href="#" v-b-toggle.OrderQueueLocalization>Localization</a>
+      <a href="#"
+        @click="showCollapse = true"
+        :class="showCollapse ? 'collapsed' : null"
+        aria-controls="OrderQueueLocalization"
+        :aria-expanded="showCollapse ? 'true' : 'false'">Localization</a>
     </b-card-header>
-    <b-collapse id="OrderQueueLocalization" visible accordion="my-accordion" role="tabpanel">
+    <b-collapse id="OrderQueueLocalization" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
         <div class="row mb-4">
           <div class="col">
@@ -28,7 +32,12 @@
 
 <script>
 export default {
-  name: 'OrderQueueLocalization'
+  name: 'OrderQueueLocalization',
+  data () {
+    return {
+      showCollapse: false
+    }
+  }
 }
 </script>
 

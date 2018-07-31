@@ -1,9 +1,13 @@
 <template lang="html">
-  <b-card no-body>
+  <b-card no-body :class="showCollapse ? 'active' : null">
     <b-card-header header-tag="header" role="tab">
-      <a href="#" v-b-toggle.orderQueueDate>Due Date</a>
+      <a href="#"
+        @click="showCollapse = true"
+        :class="showCollapse ? 'collapsed' : null"
+        aria-controls="OrderQueueDate"
+        :aria-expanded="showCollapse ? 'true' : 'false'">Due Date</a>
     </b-card-header>
-    <b-collapse id="orderQueueDate" visible accordion="my-accordion" role="tabpanel">
+    <b-collapse id="OrderQueueDate" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
         <date-picker v-model="date" :config="options"></date-picker>
       </b-card-body>
@@ -19,6 +23,7 @@ export default {
   name: 'OrderQueueDate',
   data () {
     return {
+      showCollapse: true,
       date: new Date(),
       options: {
         format: 'MM/DD/YYYY',
@@ -33,4 +38,7 @@ export default {
 </script>
 
 <style lang="scss">
+.card {
+  margin-left: 3rem;
+}
 </style>
