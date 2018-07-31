@@ -10,20 +10,20 @@
     <b-collapse id="OrderQueueUsage" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
         <div class="row">
-          <div class="col-lg p-3">
+          <div class="col-lg">
             <label for="">Broadcast</label>
             <b-btn variant="primary" v-b-modal.OrderQueueUsageBroadcast>Settings</b-btn>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg p-3 active">
+          <div class="col-lg active">
             <label for="">Online</label>
             <p>1080p, 720p, 480p, 360p, YouTube, Facebook, Instagram</p>
             <b-button variant="primary" v-b-modal.OrderQueueUsageOnline>Settings</b-button>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg p-3 active">
+          <div class="col-lg active">
             <label for="">Theatrical</label>
             <p>2D Flat, Download Link, 1 USB to Philip Zlotorynski and Doug Richar</p>
             <b-button variant="primary" v-b-modal.OrderQueueUsageTheatrical>Settings</b-button>
@@ -191,7 +191,6 @@ export default {
 #OrderQueueUsage {
   .row {
     margin: 0;
-    margin-bottom: 1rem;
   }
 
   .card-body {
@@ -199,6 +198,8 @@ export default {
   }
 
   .col-lg {
+    padding: 1rem;
+
     &:not(.active) {
       label {
         opacity: 0.33;

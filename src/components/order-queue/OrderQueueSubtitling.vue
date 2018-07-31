@@ -9,7 +9,7 @@
     </b-card-header>
     <b-collapse id="OrderQueueSubtitling" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
-        <div class="row mb-4">
+        <div class="row mb-2">
           <div class="col">
             <b-form-group label="Dialogue">
               <b-form-radio-group id="OrderQueueSubtitlingDialogue"
@@ -21,7 +21,7 @@
             </b-form-group>
           </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-2">
           <div class="col">
             <b-form-group label="Narration">
               <b-form-radio-group id="OrderQueueSubtitlingNarration"
@@ -33,7 +33,7 @@
             </b-form-group>
           </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-2">
           <div class="col">
             <b-form-group label="Graphics">
               <b-form-radio-group id="OrderQueueSubtitlingGraphics"
