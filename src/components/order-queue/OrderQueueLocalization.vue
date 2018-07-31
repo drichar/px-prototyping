@@ -50,7 +50,7 @@
               <option value="33" label="Kannada">Kannada</option>
               <option value="34" label="Khmer">Khmer</option>
               <option value="35" label="Korean">Korean</option>
-              <option value="36" label="Latin American Spanish">Latin American Spanish</option>
+              <option value="36" selected="selected" label="Latin American Spanish">Latin American Spanish</option>
               <option value="37" label="Latvian">Latvian</option>
               <option value="38" label="Latvian/Russian">Latvian/Russian</option>
               <option value="39" label="Lithuania">Lithuania</option>
@@ -137,7 +137,7 @@
               <option value="46" label="Macedonia">Macedonia</option>
               <option value="47" label="Malaysia">Malaysia</option>
               <option value="48" label="Maldives">Maldives</option>
-              <option value="49" label="Mexico">Mexico</option>
+              <option value="49" selected="selected" label="Mexico">Mexico</option>
               <option value="50" label="Mid East Regional">Mid East Regional</option>
               <option value="51" label="Mongolia">Mongolia</option>
               <option value="52" label="Nepal">Nepal</option>

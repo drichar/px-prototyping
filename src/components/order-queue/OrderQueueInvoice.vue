@@ -5,7 +5,7 @@
     </div>
 
     <div class="px-order-invoice-table">
-      <table class="table">
+      <table class="table table-sm">
         <tbody>
           <tr>
             <th scope="row">Project</th>
@@ -20,7 +20,7 @@
         </tbody>
       </table>
 
-      <table class="table">
+      <table class="table table-sm">
         <tbody>
           <tr>
             <th scope="row">Due Date</th>
@@ -30,42 +30,34 @@
         </tbody>
       </table>
 
-      <table class="table">
+      <table class="table table-sm">
         <tbody>
           <tr>
-            <th scope="row">Language</th>
-            <td>Spanish</td>
-            <td>$0</td>
-          </tr>
-          <tr>
-            <th scope="row">Territory</th>
-            <td>Spain</td>
+            <th scope="row">Localization</th>
+            <td>
+              <span><strong>Language:</strong> Latin American Spanish</span>
+              <span><strong>Territory:</strong> Mexico</span>
+            </td>
             <td>$0</td>
           </tr>
         </tbody>
       </table>
 
-      <table class="table">
+      <table class="table table-sm">
         <tbody>
           <tr>
-            <th scope="row">Dialogue</th>
-            <td>OV</td>
-            <td>$0</td>
-          </tr>
-          <tr>
-            <th scope="row">Narration</th>
-            <td>OV</td>
-            <td>$0</td>
-          </tr>
-          <tr>
-            <th scope="row">Graphics</th>
-            <td>OV</td>
+            <th scope="row">Subtitling</th>
+            <td>
+              <span><strong>Dialogue:</strong> OV</span>
+              <span><strong>Narration:</strong> OV</span>
+              <span><strong>Graphics:</strong> OV</span>
+            </td>
             <td>$0</td>
           </tr>
         </tbody>
       </table>
 
-      <table class="table">
+      <table class="table table-sm">
         <tbody>
           <tr>
             <th scope="row">Tags</th>
@@ -75,15 +67,15 @@
         </tbody>
       </table>
 
-      <table class="table">
+      <table class="table table-sm">
         <tbody>
           <tr>
-            <th scope="row">Online</th>
+            <th scope="row">Usage (Online)</th>
             <td>1080p, 720p, 480p, 360p, YouTube, Facebook, Instagram</td>
             <td>$0</td>
           </tr>
           <tr>
-            <th scope="row">Theatrical</th>
+            <th scope="row">Usage (Theatrical)</th>
             <td>2D Flat, Download Link, 1 USB to Philip Zlotorynski and Doug Richar</td>
             <td>$0</td>
           </tr>
@@ -150,13 +142,30 @@ export default {
     padding: 0 1.5rem;
     margin-right: 0.5rem;
     overflow-y: auto;
+    font-size: 14px;
 
     .table {
-      border-bottom: 1px solid #ddd;
+      // border-bottom: 1px solid #ddd;
 
       tr {
+        th, td {
+          border: 0;
+          background: hsla(0,0,100,0.75);
+        }
+
         th {
           width: 10rem;
+        }
+
+        td {
+          span {
+            display: block;
+
+            strong {
+              display: inline-block;
+              width: 5rem;
+            }
+          }
         }
 
         td:last-child {
