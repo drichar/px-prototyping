@@ -187,6 +187,10 @@ export default {
             font-weight: bold;
             color: #007bff;
             pointer-events: all;
+
+            &::before {
+              content: 'Next: ';
+            }
           }
 
           &::after {
