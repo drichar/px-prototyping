@@ -69,7 +69,7 @@
         <tbody>
           <tr>
             <th scope="row">Tags</th>
-            <td><code>COMING SOON</code></td>
+            <td><code>COMING SOON</code>, <code>NOW PLAYING</code></td>
             <td>$0</td>
           </tr>
         </tbody>
@@ -103,7 +103,7 @@
     </div>
 
     <div class="px-order-invoice-submit">
-      <button class="btn btn-lg btn-primary">Submit Order</button>
+      <button class="btn btn-lg btn-primary">Place Your Order</button>
     </div>
   </div>
 </template>
