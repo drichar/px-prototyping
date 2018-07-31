@@ -8,6 +8,11 @@
       <table class="table">
         <tbody>
           <tr>
+            <th scope="row">Project</th>
+            <td>City of Lies</td>
+            <td></td>
+          </tr>
+          <tr>
             <th scope="row">Asset</th>
             <td>Glossy Bastard Int'l 20</td>
             <td></td>
