@@ -59,7 +59,7 @@
               </b-form-group>
             </div>
           </div>
-          <div class="row mb-2" v-if="subtitlesSelected()">
+          <div class="row mb-2" v-if="subtitlesSelected() && !autoSubs">
             <div class="col">
               <div class="form-group">
                 <label for="subProvider">Subtitles provided by</label>
