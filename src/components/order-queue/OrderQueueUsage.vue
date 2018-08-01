@@ -28,149 +28,149 @@
             <p>2D Flat, Download Link, 1 USB to Philip Zlotorynski and Doug Richar</p>
             <b-button variant="primary" v-b-modal.OrderQueueUsageTheatrical>Settings</b-button>
           </div>
-
-          <b-modal id="OrderQueueUsageBroadcast" title="Broadcast Settings" cancel-variant="outline-secondary">
-            <form>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="broadcastSetting1">
-                  <label class="form-check-label" for="broadcastSetting1">SD 4:3 PAL</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="broadcastSetting2">
-                  <label class="form-check-label" for="broadcastSetting2">SD 16:9 PAL</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="broadcastSetting3">
-                  <label class="form-check-label" for="broadcastSetting3">SD 4:3 NTSC</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="broadcastSetting4">
-                  <label class="form-check-label" for="broadcastSetting4">SD 16:9 NTSC</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="broadcastSetting5">
-                  <label class="form-check-label" for="broadcastSetting5">HD 2398</label>
-                </div>
-              </div>
-            </form>
-          </b-modal>
-
-          <b-modal id="OrderQueueUsageOnline" title="Online Settings" cancel-variant="outline-secondary">
-            <form>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="onlineSetting1" checked>
-                  <label class="form-check-label" for="onlineSetting1">1080p</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="onlineSetting2" checked>
-                  <label class="form-check-label" for="onlineSetting2">720p</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="onlineSetting3" checked>
-                  <label class="form-check-label" for="onlineSetting3">480p</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="onlineSetting4" checked>
-                  <label class="form-check-label" for="onlineSetting4">360p</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="onlineSetting5" checked>
-                  <label class="form-check-label" for="onlineSetting5">YouTube</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="onlineSetting6" checked>
-                  <label class="form-check-label" for="onlineSetting6">Facebook</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="onlineSetting7" checked>
-                  <label class="form-check-label" for="onlineSetting7">Instagram</label>
-                </div>
-              </div>
-            </form>
-          </b-modal>
-
-          <b-modal id="OrderQueueUsageTheatrical" size="lg" title="Theatrical Settings" cancel-variant="outline-secondary">
-            <form>
-              <table class="table table-borderless table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col">D/L Link</th>
-                    <th scope="col">Ship USB</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Recipients</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">2D Flat</th>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="number" class="form-control px-order-usage-qty" value="1"></td>
-                    <td><input type="text" class="form-control" value="phil@pixwel.com, doug@pixwel.com"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2D Scope</th>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="number" class="form-control px-order-usage-qty"></td>
-                    <td><input type="text" class="form-control"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2D Combo</th>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="number" class="form-control px-order-usage-qty"></td>
-                    <td><input type="text" class="form-control"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3D Flat</th>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="number" class="form-control px-order-usage-qty"></td>
-                    <td><input type="text" class="form-control"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3D Scope</th>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="number" class="form-control px-order-usage-qty"></td>
-                    <td><input type="text" class="form-control"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3D Combo</th>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="number" class="form-control px-order-usage-qty"></td>
-                    <td><input type="text" class="form-control"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </form>
-          </b-modal>
         </div>
+
+        <b-modal id="OrderQueueUsageBroadcast" title="Broadcast Settings" cancel-variant="outline-secondary">
+          <form>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="broadcastSetting1">
+                <label class="form-check-label" for="broadcastSetting1">SD 4:3 PAL</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="broadcastSetting2">
+                <label class="form-check-label" for="broadcastSetting2">SD 16:9 PAL</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="broadcastSetting3">
+                <label class="form-check-label" for="broadcastSetting3">SD 4:3 NTSC</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="broadcastSetting4">
+                <label class="form-check-label" for="broadcastSetting4">SD 16:9 NTSC</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="broadcastSetting5">
+                <label class="form-check-label" for="broadcastSetting5">HD 2398</label>
+              </div>
+            </div>
+          </form>
+        </b-modal>
+
+        <b-modal id="OrderQueueUsageOnline" title="Online Settings" cancel-variant="outline-secondary">
+          <form>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onlineSetting1" checked>
+                <label class="form-check-label" for="onlineSetting1">1080p</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onlineSetting2" checked>
+                <label class="form-check-label" for="onlineSetting2">720p</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onlineSetting3" checked>
+                <label class="form-check-label" for="onlineSetting3">480p</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onlineSetting4" checked>
+                <label class="form-check-label" for="onlineSetting4">360p</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onlineSetting5" checked>
+                <label class="form-check-label" for="onlineSetting5">YouTube</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onlineSetting6" checked>
+                <label class="form-check-label" for="onlineSetting6">Facebook</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onlineSetting7" checked>
+                <label class="form-check-label" for="onlineSetting7">Instagram</label>
+              </div>
+            </div>
+          </form>
+        </b-modal>
+
+        <b-modal id="OrderQueueUsageTheatrical" size="lg" title="Theatrical Settings" cancel-variant="outline-secondary">
+          <form>
+            <table class="table table-borderless table-striped">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">D/L Link</th>
+                  <th scope="col">Ship USB</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Recipients</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2D Flat</th>
+                  <td><input type="checkbox" checked></td>
+                  <td><input type="checkbox" checked></td>
+                  <td><input type="number" class="form-control px-order-usage-qty" value="1"></td>
+                  <td><input type="text" class="form-control" value="phil@pixwel.com, doug@pixwel.com"></td>
+                </tr>
+                <tr>
+                  <th scope="row">2D Scope</th>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="number" class="form-control px-order-usage-qty"></td>
+                  <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">2D Combo</th>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="number" class="form-control px-order-usage-qty"></td>
+                  <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">3D Flat</th>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="number" class="form-control px-order-usage-qty"></td>
+                  <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">3D Scope</th>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="number" class="form-control px-order-usage-qty"></td>
+                  <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">3D Combo</th>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="number" class="form-control px-order-usage-qty"></td>
+                  <td><input type="text" class="form-control"></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </b-modal>
       </b-card-body>
     </b-collapse>
   </b-card>
