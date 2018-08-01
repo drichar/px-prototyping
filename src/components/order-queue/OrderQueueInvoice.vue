@@ -48,9 +48,10 @@
           <tr>
             <th scope="row">Subtitling</th>
             <td>
-              <span><strong>Dialogue:</strong> OV</span>
+              <span><strong>Dialogue:</strong> Subtitled</span>
               <span><strong>Narration:</strong> OV</span>
               <span><strong>Graphics:</strong> OV</span>
+              <span><strong>Provider:</strong> Jeff Loiselle (jeff@pixwel.com)</span>
             </td>
             <td>$0</td>
           </tr>
