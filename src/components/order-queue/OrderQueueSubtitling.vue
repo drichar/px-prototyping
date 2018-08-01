@@ -59,6 +59,18 @@
               </b-form-group>
             </div>
           </div>
+          <div class="row mb-2" v-if="subtitlesSelected()">
+            <div class="col">
+              <div class="form-group">
+                <label for="subProvider">Subtitles provided by</label>
+                <select id="subProvider" class="form-control">
+                  <option selected>Jeff Loiselle (jeff@pixwel.com)</option>
+                  <option>My subtitling vendor</option>
+                  <option>I will upload a script</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
           <div class="px-order-queue-autosubs" :class="{visible: autoSubs}">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -103,6 +115,20 @@ export default {
           { text: 'Subtitled', value: 'graphicsSubtitled' }
         ]
       }
+    }
+  },
+  methods: {
+    subtitlesSelected: function() {
+      let subsSelected = false;
+      let selected = [this.$data.dialogue.selected, this.$data.narration.selected, this.$data.graphics.selected];
+
+      for (let i = 0; i < selected.length; i++) {
+    		if (selected[i].includes('Subtitled')) {
+          subsSelected = true;
+        }
+    	}
+
+      return subsSelected;
     }
   }
 }
