@@ -1,6 +1,18 @@
 <template lang="html">
   <div class="px-order">
-    <h3>Order Details</h3>
+    <div class="px-order-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Translation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Questionnaire</a>
+        </li>
+      </ul>
+    </div>
 
     <div class="px-order-panes">
       <div class="px-order-form">
@@ -52,11 +64,27 @@ export default {
   grid-template: auto 1fr / 1fr;
   height: calc(100vh - 4rem);
   overflow: hidden;
+}
 
-  h3 {
-    padding: 1.5rem;
-    margin: 0;
-    height: 5rem;
+.px-order-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+
+  a {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    pointer-events: none;
+
+    &.active {
+      color: #666;
+      border-bottom: 3px solid #007bff;
+    }
+
+    &.disabled {
+      color: #ccc;
+    }
   }
 }
 
