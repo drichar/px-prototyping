@@ -38,7 +38,7 @@
               <span><strong>Language:</strong> Latin American Spanish</span>
               <span><strong>Territory:</strong> Mexico</span>
             </td>
-            <td>$0</td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -61,7 +61,20 @@
         <tbody>
           <tr>
             <th scope="row">Tags</th>
-            <td><code>COMING SOON</code>, <code>NOW PLAYING</code></td>
+            <td>
+              <span>
+                <code>COMING SOON</code>
+                <svg v-b-tooltip.hover="'COMING_SOON_FILE.mp4'" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M14.568.074c2.202 1.174 5.938 4.885 7.432 6.882-1.286-.899-4.044-1.657-6.091-1.179.222-1.468-.185-4.535-1.341-5.703zm7.432 10.926v13h-20v-24h8.409c4.857 0 3.335 8 3.335 8 3.009-.745 8.256-.42 8.256 3zm-7 3.508l-6-3.528v7.02l6-3.492z"/>
+                </svg>
+              </span>
+              <span>
+                <code>NOW PLAYING</code>
+                <svg v-b-tooltip.hover="'NOW_PLAYING_FILE.mp4'" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M14.568.074c2.202 1.174 5.938 4.885 7.432 6.882-1.286-.899-4.044-1.657-6.091-1.179.222-1.468-.185-4.535-1.341-5.703zm7.432 10.926v13h-20v-24h8.409c4.857 0 3.335 8 3.335 8 3.009-.745 8.256-.42 8.256 3zm-7 3.508l-6-3.528v7.02l6-3.492z"/>
+                </svg>
+              </span>
+            </td>
             <td>$0</td>
           </tr>
         </tbody>
@@ -145,12 +158,10 @@ export default {
     font-size: 14px;
 
     .table {
-      // border-bottom: 1px solid #ddd;
 
       tr {
         th, td {
           border: 0;
-          background: hsla(0,0,100,0.75);
         }
 
         th {
@@ -164,6 +175,10 @@ export default {
             strong {
               display: inline-block;
               width: 5rem;
+            }
+
+            svg {
+              margin-left: 0.5rem;
             }
           }
         }
