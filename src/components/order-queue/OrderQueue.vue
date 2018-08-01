@@ -25,7 +25,9 @@
           <OrderQueueLocalization/>
           <OrderQueueSubtitling/>
           <OrderQueueTags/>
-          <OrderQueueUsage/>
+          <OrderQueueUsageBroadcast/>
+          <OrderQueueUsageOnline/>
+          <OrderQueueUsageTheatrical/>
         </div>
       </div>
 
@@ -42,7 +44,9 @@ import OrderQueueDate from './OrderQueueDate.vue'
 import OrderQueueLocalization from './OrderQueueLocalization.vue'
 import OrderQueueSubtitling from './OrderQueueSubtitling.vue'
 import OrderQueueTags from './OrderQueueTags.vue'
-import OrderQueueUsage from './OrderQueueUsage.vue'
+import OrderQueueUsageBroadcast from './OrderQueueUsageBroadcast.vue'
+import OrderQueueUsageOnline from './OrderQueueUsageOnline.vue'
+import OrderQueueUsageTheatrical from './OrderQueueUsageTheatrical.vue'
 import OrderQueueInvoice from './OrderQueueInvoice.vue'
 
 export default {
@@ -52,7 +56,9 @@ export default {
     OrderQueueLocalization,
     OrderQueueSubtitling,
     OrderQueueTags,
-    OrderQueueUsage,
+    OrderQueueUsageBroadcast,
+    OrderQueueUsageOnline,
+    OrderQueueUsageTheatrical,
     OrderQueueInvoice
   }
 }
