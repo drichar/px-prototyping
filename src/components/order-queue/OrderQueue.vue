@@ -25,9 +25,10 @@
           <OrderQueueLocalization/>
           <OrderQueueSubtitling/>
           <OrderQueueTags/>
-          <OrderQueueUsageBroadcast/>
-          <OrderQueueUsageOnline/>
-          <OrderQueueUsageTheatrical/>
+          <OrderQueueUsage @input="value => updateUsage(value)"/>
+          <OrderQueueUsageBroadcast v-if="isUsageSelected('broadcast')"/>
+          <OrderQueueUsageOnline v-if="isUsageSelected('online')"/>
+          <OrderQueueUsageTheatrical v-if="isUsageSelected('theatrical')"/>
         </div>
       </div>
 
@@ -44,6 +45,7 @@ import OrderQueueDate from './OrderQueueDate.vue'
 import OrderQueueLocalization from './OrderQueueLocalization.vue'
 import OrderQueueSubtitling from './OrderQueueSubtitling.vue'
 import OrderQueueTags from './OrderQueueTags.vue'
+import OrderQueueUsage from './OrderQueueUsage.vue'
 import OrderQueueUsageBroadcast from './OrderQueueUsageBroadcast.vue'
 import OrderQueueUsageOnline from './OrderQueueUsageOnline.vue'
 import OrderQueueUsageTheatrical from './OrderQueueUsageTheatrical.vue'
@@ -56,10 +58,34 @@ export default {
     OrderQueueLocalization,
     OrderQueueSubtitling,
     OrderQueueTags,
+    OrderQueueUsage,
     OrderQueueUsageBroadcast,
     OrderQueueUsageOnline,
     OrderQueueUsageTheatrical,
     OrderQueueInvoice
+  },
+  data () {
+    return {
+      usagesSelected: []
+    }
+  },
+  methods: {
+    updateUsage(value) {
+      let index = this.$data.usagesSelected.indexOf(value)
+      if (index > -1) {
+        this.$data.usagesSelected.splice(index, 1)
+      }
+      else {
+        this.$data.usagesSelected.push(value)
+      }
+    },
+    isUsageSelected(value) {
+      let index = this.$data.usagesSelected.indexOf(value)
+      if (index > -1) {
+        return true
+      }
+      return false
+    }
   }
 }
 </script>
