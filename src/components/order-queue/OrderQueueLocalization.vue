@@ -5,7 +5,7 @@
         @click="showCollapse = true"
         :class="showCollapse ? 'collapsed' : null"
         aria-controls="OrderQueueLocalization"
-        :aria-expanded="showCollapse ? 'true' : 'false'">Localization</a>
+        :aria-expanded="showCollapse ? 'true' : 'false'">Language &amp; Territory</a>
     </b-card-header>
     <b-collapse id="OrderQueueLocalization" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>

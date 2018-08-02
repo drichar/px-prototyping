@@ -5,7 +5,7 @@
         @click="showCollapse = true"
         :class="showCollapse ? 'collapsed' : null"
         aria-controls="OrderQueueSubtitling"
-        :aria-expanded="showCollapse ? 'true' : 'false'">Subtitling</a>
+        :aria-expanded="showCollapse ? 'true' : 'false'">Localization</a>
     </b-card-header>
     <b-collapse id="OrderQueueSubtitling" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>

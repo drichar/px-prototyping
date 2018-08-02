@@ -33,11 +33,13 @@
       <table class="table table-sm">
         <tbody>
           <tr>
-            <th scope="row">Localization</th>
-            <td>
-              <span><strong>Language:</strong> Latin American Spanish</span>
-              <span><strong>Territory:</strong> Mexico</span>
-            </td>
+            <th scope="row">Language</th>
+            <td>Latin American Spanish</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Territory</th>
+            <td>Mexico</td>
             <td></td>
           </tr>
         </tbody>
@@ -46,7 +48,7 @@
       <table class="table table-sm">
         <tbody>
           <tr>
-            <th scope="row">Subtitling</th>
+            <th scope="row">Localization</th>
             <td>
               <span><strong>Dialogue:</strong> Subtitled</span>
               <span><strong>Narration:</strong> OV</span>
