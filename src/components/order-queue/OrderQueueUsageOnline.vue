@@ -5,7 +5,7 @@
         @click="showCollapse = true"
         :class="showCollapse ? 'collapsed' : null"
         aria-controls="OrderQueueUsageOnline"
-        :aria-expanded="showCollapse ? 'true' : 'false'">Online Usage</a>
+        :aria-expanded="showCollapse ? 'true' : 'false'">Online Settings</a>
     </b-card-header>
     <b-collapse id="OrderQueueUsageOnline" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
