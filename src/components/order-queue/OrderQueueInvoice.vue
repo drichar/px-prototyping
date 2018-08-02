@@ -139,7 +139,7 @@ export default {
   display: grid;
   grid-template: auto 1fr auto auto / 1fr;
   max-height: calc(100vh - 9rem);
-  background: #f6f6f6;
+  background: hsla(0,0,96,1);
 
   .px-order-invoice-title {
     padding: 1.5rem;
@@ -153,13 +153,12 @@ export default {
   }
 
   .px-order-invoice-table {
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 2rem;
     margin-right: 0.5rem;
     overflow-y: auto;
     font-size: 14px;
 
     .table {
-
       tr {
         th, td {
           border: 0;
@@ -195,6 +194,7 @@ export default {
   .px-order-invoice-total {
     background: hsla(0,0,0,0.025);
     padding: 1rem 1.5rem;
+    position: relative;
 
     .table {
       margin: 0;
@@ -211,6 +211,16 @@ export default {
           width: 6rem;
         }
       }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -3rem;
+      left: 0;
+      right: 1rem;
+      height: 3rem;
+      background: linear-gradient(to bottom, hsla(0,0,96,0) 0%, hsla(0,0,96,1) 100%);
     }
   }
 
