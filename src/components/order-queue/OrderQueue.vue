@@ -80,7 +80,6 @@ export default {
 .px-order {
   height: calc(100vh - 4rem);
   overflow: hidden;
-  padding-top: 1.5rem;
 
   h3 {
     padding: 1.5rem;
@@ -97,6 +96,7 @@ export default {
 
 .px-order-form {
   overflow-y: auto;
+  padding-top: 1.5rem;
 
   .alert {
     margin: 0 1.5rem 1.5rem;
