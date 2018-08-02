@@ -78,7 +78,6 @@ export default {
 
 <style lang="scss">
 .px-order {
-  height: calc(100vh - 4rem);
   overflow: hidden;
 
   h3 {
@@ -91,12 +90,13 @@ export default {
 .px-order-panes {
   display: grid;
   grid-template: 1fr / 1fr 1fr;
-  height: calc(100vh - 9rem);
+  height: calc(100vh - 4rem);
 }
 
 .px-order-form {
   overflow-y: auto;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
   .alert {
     margin: 0 1.5rem 1.5rem;
