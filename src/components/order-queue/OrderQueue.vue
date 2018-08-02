@@ -1,7 +1,5 @@
 <template lang="html">
   <div class="px-order">
-    <h3>Order Details</h3>
-
     <div class="px-order-panes">
       <div class="px-order-form">
         <b-alert show dismissible>
@@ -80,10 +78,9 @@ export default {
 
 <style lang="scss">
 .px-order {
-  display: grid;
-  grid-template: auto 1fr / 1fr;
   height: calc(100vh - 4rem);
   overflow: hidden;
+  padding-top: 1.5rem;
 
   h3 {
     padding: 1.5rem;
