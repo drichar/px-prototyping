@@ -27,7 +27,7 @@
             </ul>
           </div>
         </div>
-        <div class="row mb-3">
+        <div class="row mb-4">
           <div class="col">
             <b-form inline>
               <input type="text" class="form-control" placeholder="Enter new tag">

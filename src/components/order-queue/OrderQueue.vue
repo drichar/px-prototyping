@@ -101,6 +101,12 @@ export default {
   }
 }
 
+@media (max-width: 1336px) {
+  .px-order {
+    font-size: 14px;
+  }
+}
+
 .px-order-panes {
   display: grid;
   grid-template: 1fr / 1fr 1fr;
