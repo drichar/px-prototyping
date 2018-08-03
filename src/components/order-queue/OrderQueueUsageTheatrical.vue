@@ -101,6 +101,17 @@
                 <label class="form-check-label" for="theatricalSetting3Usb">USB</label>
               </div>
             </div>
+            <div class="px-theatrical-option-recipients">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span>Philip Zlotorynski</span>
+                </li>
+                <li class="list-group-item">
+                  <span>Biff Tannen</span>
+                </li>
+              </ul>
+              <b-btn variant="primary" block="true">Edit Recipients</b-btn>
+            </div>
           </div>
 
           <div class="px-theatrical-option">
