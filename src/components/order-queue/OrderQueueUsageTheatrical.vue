@@ -10,61 +10,113 @@
     <b-collapse id="OrderQueueUsageTheatrical" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
         <form>
-          <table class="table table-borderless table-striped">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">D/L Link</th>
-                <th scope="col">Ship USB</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Recipients</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">2D Flat</th>
-                <td><input type="checkbox" checked></td>
-                <td><input type="checkbox" checked></td>
-                <td><input type="number" class="form-control px-order-usage-qty" value="1"></td>
-                <td><input type="text" class="form-control" value="phil@pixwel.com, doug@pixwel.com"></td>
-              </tr>
-              <tr>
-                <th scope="row">2D Scope</th>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="number" class="form-control px-order-usage-qty"></td>
-                <td><input type="text" class="form-control"></td>
-              </tr>
-              <tr>
-                <th scope="row">2D Combo</th>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="number" class="form-control px-order-usage-qty"></td>
-                <td><input type="text" class="form-control"></td>
-              </tr>
-              <tr>
-                <th scope="row">3D Flat</th>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="number" class="form-control px-order-usage-qty"></td>
-                <td><input type="text" class="form-control"></td>
-              </tr>
-              <tr>
-                <th scope="row">3D Scope</th>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="number" class="form-control px-order-usage-qty"></td>
-                <td><input type="text" class="form-control"></td>
-              </tr>
-              <tr>
-                <th scope="row">3D Combo</th>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="number" class="form-control px-order-usage-qty"></td>
-                <td><input type="text" class="form-control"></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="px-theatrical-option">
+            <div class="px-theatrical-option-primary">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting1" checked>
+                <label class="form-check-label" for="theatricalSetting1">2D Flat</label>
+              </div>
+            </div>
+            <div class="px-theatrical-option-dl">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting1Dl">
+                <label class="form-check-label" for="theatricalSetting1Dl">DL/Link</label>
+              </div>
+            </div>
+            <div class="px-theatrical-option-usb">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting1Usb" checked>
+                <label class="form-check-label" for="theatricalSetting1Usb">USB</label>
+              </div>
+            </div>
+            <div class="px-theatrical-option-qty">
+              <b-form inline>
+                <label class="mr-sm-2" for="theatricalSetting1Qty">Qty</label>
+                <b-form-input type="number" value="1" id="theatricalSetting1Qty"></b-form-input>
+              </b-form>
+            </div>
+            <div class="px-theatrical-option-recipients">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span>Philip Zlotorynski</span>
+                  <span>123 Main St</span>
+                  <span>Anytown, USA 01234</span>
+                </li>
+                <li class="list-group-item">
+                  <span>Biff Tannen</span>
+                  <span>1809 Mason Street</span>
+                  <span>Hill Valley, CA 95420</span>
+                </li>
+              </ul>
+              <b-btn variant="primary" block="true">Edit Recipients</b-btn>
+            </div>
+          </div>
+
+          <div class="px-theatrical-option">
+            <div class="px-theatrical-option-primary">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting2" checked>
+                <label class="form-check-label" for="theatricalSetting2">2D Scope</label>
+              </div>
+            </div>
+            <div class="px-theatrical-option-dl">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting2Dl">
+                <label class="form-check-label" for="theatricalSetting2Dl">DL/Link</label>
+              </div>
+            </div>
+            <div class="px-theatrical-option-usb">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting2Usb" checked>
+                <label class="form-check-label" for="theatricalSetting2Usb">USB</label>
+              </div>
+            </div>
+            <div class="px-theatrical-option-qty">
+              <b-form inline>
+                <label class="mr-sm-2" for="theatricalSetting2Qty">Qty</label>
+                <b-form-input type="number" value="1" id="theatricalSetting2Qty"></b-form-input>
+              </b-form>
+            </div>
+            <div class="px-theatrical-option-recipients">
+              <b-btn variant="primary" block="true">Select Recipients</b-btn>
+            </div>
+          </div>
+
+          <div class="px-theatrical-option">
+            <div class="px-theatrical-option-primary">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting3">
+                <label class="form-check-label" for="theatricalSetting3">2D Combo</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-theatrical-option">
+            <div class="px-theatrical-option-primary">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting4">
+                <label class="form-check-label" for="theatricalSetting4">3D Flat</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-theatrical-option">
+            <div class="px-theatrical-option-primary">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting5">
+                <label class="form-check-label" for="theatricalSetting5">3D Scope</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-theatrical-option">
+            <div class="px-theatrical-option-primary">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting6">
+                <label class="form-check-label" for="theatricalSetting6">3D Combo</label>
+              </div>
+            </div>
+          </div>
         </form>
       </b-card-body>
     </b-collapse>
@@ -88,24 +140,65 @@ export default {
     max-width: none;
   }
 
-  .table {
-    border-top: 0;
+  .px-theatrical-option {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
 
-    th, td {
-      vertical-align: middle;
+    .px-theatrical-option-primary,
+    .px-theatrical-option-dl,
+    .px-theatrical-option-usb,
+    .px-theatrical-option-qty,
+    .px-theatrical-option-recipients {
+      flex: 0 0 auto;
     }
 
-    th:nth-child(2),
-    th:nth-child(3),
-    td:nth-child(2),
-    td:nth-child(3),
-    td:nth-child(4) {
+    .px-theatrical-option-primary {
+      text-align: left;
+      width: 30%;
+
+      [type='checkbox']:checked ~ label {
+        font-weight: bold;
+      }
+    }
+
+    .px-theatrical-option-dl,
+    .px-theatrical-option-usb {
       text-align: center;
+      width: 23.333%;
     }
 
-    .px-order-usage-qty {
-      width: 4rem;
+    .px-theatrical-option-qty {
+      text-align: right;
+      width: 23.333%;
+
+      .form-inline {
+        justify-content: flex-end;
+      }
+
+      [type='number'] {
+        width: 3rem;
+      }
     }
+
+    .px-theatrical-option-recipients {
+      width: 100%;
+      padding: 1rem 0;
+
+      .list-group {
+        margin-bottom: 1rem;
+
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .px-theatrical-option-qty {
+    width: 4rem;
   }
 }
 </style>
