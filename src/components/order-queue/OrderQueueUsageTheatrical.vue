@@ -85,8 +85,20 @@
           <div class="px-theatrical-option">
             <div class="px-theatrical-option-primary">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting3">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting3" checked>
                 <label class="form-check-label" for="theatricalSetting3">2D Combo</label>
+              </div>
+            </div>
+            <div class="px-theatrical-option-dl">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting3Dl" checked>
+                <label class="form-check-label" for="theatricalSetting3Dl">DL/Link</label>
+              </div>
+            </div>
+            <div class="px-theatrical-option-usb">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="theatricalSetting3Usb">
+                <label class="form-check-label" for="theatricalSetting3Usb">USB</label>
               </div>
             </div>
           </div>
