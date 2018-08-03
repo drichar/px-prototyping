@@ -61,7 +61,7 @@
               </b-form-group>
             </div>
           </div>
-          <div class="row" v-if="subtitlesSelected() && !autoSubs">
+          <div class="row" v-if="subtitlesSelected() && !checked">
             <div class="col">
               <div class="form-group">
                 <label for="subProvider">Subtitles provided by</label>
@@ -69,7 +69,7 @@
               </div>
             </div>
           </div>
-          <div class="row mb-2" v-if="subtitleProvider === 'upload'">
+          <div class="row mb-2" v-if="subtitlesSelected() && !checked && subtitleProvider === 'upload'">
             <div class="col">
               <div class="form-group">
                 <b-form-file v-model="file" :state="Boolean(file)" placeholder="Select/drop script to upload"></b-form-file>
