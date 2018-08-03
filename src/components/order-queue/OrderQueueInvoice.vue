@@ -111,14 +111,28 @@
     </div>
 
     <div class="px-order-invoice-submit">
-      <button class="btn btn-lg btn-primary">Place Your Order</button>
+      <button class="btn btn-lg btn-primary">
+        <span v-if="autoSubs || subtitlerEnabled">Next Step: Translation</span>
+        <span v-else>Place Your Order</span>
+      </button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'OrderQueueInvoice'
+  name: 'OrderQueueInvoice',
+  props: ['autoSubs'],
+  data () {
+    return {
+      subtitlerEnabled: false
+    }
+  },
+  created() {
+    this.$eventBus.$on('subtitlerEnabled', (data) => {
+      this.$data.subtitlerEnabled = data;
+    });
+  }
 }
 </script>
 

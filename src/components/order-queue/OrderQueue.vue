@@ -9,7 +9,7 @@
         <div role="tablist">
           <OrderQueueDate/>
           <OrderQueueLocalization/>
-          <OrderQueueSubtitling/>
+          <OrderQueueSubtitling v-model="autoSubs"/>
           <OrderQueueTags/>
           <OrderQueueUsage @input="value => updateUsage(value)"/>
           <OrderQueueUsageBroadcast v-if="isUsageSelected('broadcast')"/>
@@ -19,7 +19,7 @@
       </div>
 
       <div class="px-order-invoice">
-        <OrderQueueInvoice/>
+        <OrderQueueInvoice :auto-subs="autoSubs"/>
       </div>
     </div>
   </div>
@@ -52,7 +52,8 @@ export default {
   },
   data () {
     return {
-      usagesSelected: []
+      usagesSelected: [],
+      autoSubs: false
     }
   },
   methods: {
