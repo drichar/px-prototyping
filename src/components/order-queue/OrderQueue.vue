@@ -87,7 +87,7 @@ export default {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsla(0,0,0,0.075);
+  background-color: hsla(0,0,0,0.067);
   border-radius: 0.5rem;
 }
 
@@ -110,11 +110,13 @@ export default {
 .px-order-panes {
   display: grid;
   grid-template: 1fr / 1fr 1fr;
+  grid-gap: 0.5rem;
   height: calc(100vh - 4rem);
 }
 
 .px-order-form {
   overflow-y: auto;
+  margin: 0.5rem 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 
