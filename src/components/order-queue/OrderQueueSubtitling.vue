@@ -140,10 +140,10 @@ export default {
       let selected = [this.$data.dialogue.selected, this.$data.narration.selected, this.$data.graphics.selected];
 
       for (let i = 0; i < selected.length; i++) {
-    		if (selected[i].includes('Subtitled')) {
+        if (selected[i].includes('Subtitled')) {
           subsSelected = true;
         }
-    	}
+      }
 
       return subsSelected;
     },
@@ -157,19 +157,19 @@ export default {
   },
   watch: {
     dialogue: {
-       handler(val){
+       handler() {
          this.onDngChange();
        },
        deep: true
     },
     narration: {
-       handler(val){
+       handler() {
          this.onDngChange();
        },
        deep: true
     },
     graphics: {
-       handler(val){
+       handler() {
          this.onDngChange();
        },
        deep: true
