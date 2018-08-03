@@ -77,6 +77,20 @@ export default {
 </script>
 
 <style lang="scss">
+::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(0,0,0,0.075);
+  border-radius: 0.5rem;
+}
+
 .px-order {
   overflow: hidden;
 
