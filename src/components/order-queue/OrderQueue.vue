@@ -279,6 +279,6 @@ export default {
 
 .px-order-invoice {
   overflow-y: auto;
-  height: calc(100vh - 9rem);
+  height: calc(100vh - 4rem);
 }
 </style>

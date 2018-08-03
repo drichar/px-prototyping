@@ -154,7 +154,7 @@ export default {
 #OrderQueueInvoice {
   display: grid;
   grid-template: auto 1fr auto auto / 1fr;
-  max-height: calc(100vh - 9rem);
+  max-height: calc(100vh - 4rem);
   background: hsla(0,0,96,1);
 
   .px-order-invoice-title {
