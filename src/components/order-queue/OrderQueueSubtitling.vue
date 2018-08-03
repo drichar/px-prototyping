@@ -61,15 +61,18 @@
               </b-form-group>
             </div>
           </div>
-          <div class="row mb-2" v-if="subtitlesSelected() && !autoSubs">
+          <div class="row" v-if="subtitlesSelected() && !autoSubs">
             <div class="col">
               <div class="form-group">
                 <label for="subProvider">Subtitles provided by</label>
-                <select id="subProvider" class="form-control">
-                  <option selected>Jeff Loiselle (jeff@pixwel.com)</option>
-                  <option>My subtitling vendor</option>
-                  <option>I will upload a script</option>
-                </select>
+                <b-form-select v-model="subtitleProvider" :options="subtitleProviderOptions" class="mb-3" id="subProvider" />
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2" v-if="subtitleProvider === 'upload'">
+            <div class="col">
+              <div class="form-group">
+                <b-form-file v-model="file" :state="Boolean(file)" placeholder="Select/drop script to upload"></b-form-file>
               </div>
             </div>
           </div>
@@ -120,7 +123,15 @@ export default {
           { text: 'Dedicated', value: 'graphicsDedicated' },
           { text: 'Subtitled', value: 'graphicsSubtitled' }
         ]
-      }
+      },
+      subtitleProvider: null,
+      subtitleProviderOptions: [
+        { value: null, text: 'Please select an option' },
+        { value: 'me', text: 'Jeff Loiselle (jeff@pixwel.com)' },
+        { value: 'vendor', text: 'My subtitling vendor' },
+        { value: 'upload', text: 'I will upload a script' }
+      ],
+      file: null
     }
   },
   methods: {
