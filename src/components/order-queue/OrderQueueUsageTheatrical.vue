@@ -181,7 +181,7 @@ export default {
       border-radius: 0.25rem;
       border: 1px solid #ddd;
       margin-bottom: 1rem;
-      padding: 1rem;
+      padding: 1rem 1rem 1.25rem;
 
       .px-theatrical-option-primary {
         margin-bottom: 0.75rem;
