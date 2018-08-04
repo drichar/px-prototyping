@@ -116,7 +116,7 @@ export default {
 
 .px-order-form {
   overflow-y: auto;
-  margin: 0.5rem 0;
+  margin: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 
