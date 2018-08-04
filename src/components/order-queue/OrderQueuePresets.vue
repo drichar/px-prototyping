@@ -1,8 +1,8 @@
 <template lang="html">
   <div id="OrderQueuePresets">
-    <b-alert show dismissible>
+    <b-alert variant="primary" show dismissible>
       <span>Would you like to apply settings from a previous order?</span>
-      <b-btn size="sm" variant="info" v-b-modal.presets>Select a Preset</b-btn>
+      <b-btn size="sm" variant="primary" v-b-modal.presets>Select a Preset</b-btn>
     </b-alert>
 
     <b-modal id="presets" title="Select a Preset" size="lg" cancel-variant="outline-primary" ok-title="Apply Settings">
