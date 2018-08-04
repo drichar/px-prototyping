@@ -20,7 +20,7 @@
             <div class="px-theatrical-option-dl">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="theatricalSetting1Dl">
-                <label class="form-check-label" for="theatricalSetting1Dl">DL/Link</label>
+                <label class="form-check-label" for="theatricalSetting1Dl">Download</label>
               </div>
             </div>
             <div class="px-theatrical-option-usb">
@@ -62,7 +62,7 @@
             <div class="px-theatrical-option-dl">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="theatricalSetting2Dl">
-                <label class="form-check-label" for="theatricalSetting2Dl">DL/Link</label>
+                <label class="form-check-label" for="theatricalSetting2Dl">Download</label>
               </div>
             </div>
             <div class="px-theatrical-option-usb">
@@ -92,7 +92,7 @@
             <div class="px-theatrical-option-dl">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="theatricalSetting3Dl" checked>
-                <label class="form-check-label" for="theatricalSetting3Dl">DL/Link</label>
+                <label class="form-check-label" for="theatricalSetting3Dl">Download</label>
               </div>
             </div>
             <div class="px-theatrical-option-usb">
