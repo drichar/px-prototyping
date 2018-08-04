@@ -10,7 +10,7 @@
     <b-collapse id="OrderQueueUsageTheatrical" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
         <form>
-          <div class="px-theatrical-option">
+          <div class="px-theatrical-option active">
             <div class="px-theatrical-option-primary">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="theatricalSetting1" checked>
@@ -32,7 +32,7 @@
             <div class="px-theatrical-option-qty">
               <b-form inline>
                 <label class="mr-sm-2" for="theatricalSetting1Qty">Qty</label>
-                <b-form-input type="number" value="1" id="theatricalSetting1Qty"></b-form-input>
+                <b-form-input size="sm" type="number" value="1" id="theatricalSetting1Qty"></b-form-input>
               </b-form>
             </div>
             <div class="px-theatrical-option-recipients">
@@ -52,7 +52,7 @@
             </div>
           </div>
 
-          <div class="px-theatrical-option">
+          <div class="px-theatrical-option active">
             <div class="px-theatrical-option-primary">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="theatricalSetting2" checked>
@@ -74,7 +74,7 @@
             <div class="px-theatrical-option-qty">
               <b-form inline>
                 <label class="mr-sm-2" for="theatricalSetting2Qty">Qty</label>
-                <b-form-input type="number" value="1" id="theatricalSetting2Qty"></b-form-input>
+                <b-form-input size="sm" type="number" value="1" id="theatricalSetting2Qty"></b-form-input>
               </b-form>
             </div>
             <div class="px-theatrical-option-recipients">
@@ -82,7 +82,7 @@
             </div>
           </div>
 
-          <div class="px-theatrical-option">
+          <div class="px-theatrical-option active">
             <div class="px-theatrical-option-primary">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="theatricalSetting3" checked>
@@ -100,6 +100,12 @@
                 <input class="form-check-input" type="checkbox" value="" id="theatricalSetting3Usb">
                 <label class="form-check-label" for="theatricalSetting3Usb">USB</label>
               </div>
+            </div>
+            <div class="px-theatrical-option-qty hidden">
+              <b-form inline>
+                <label class="mr-sm-2" for="theatricalSetting2Qty">Qty</label>
+                <b-form-input size="sm" type="number" value="1" id="theatricalSetting2Qty"></b-form-input>
+              </b-form>
             </div>
             <div class="px-theatrical-option-recipients">
               <ul class="list-group">
@@ -160,7 +166,7 @@ export default {
 <style lang="scss">
 #OrderQueueUsageTheatrical {
   .card-body {
-    max-width: none;
+    padding: 1rem 0 0;
   }
 
   .px-theatrical-option {
@@ -168,7 +174,19 @@ export default {
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+
+    &.active {
+      background: #f9f9f9;
+      border-radius: 0.25rem;
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+      padding: 1rem;
+
+      .px-theatrical-option-primary {
+        margin-bottom: 0.75rem;
+      }
+    }
 
     .px-theatrical-option-primary,
     .px-theatrical-option-dl,
@@ -180,22 +198,25 @@ export default {
 
     .px-theatrical-option-primary {
       text-align: left;
-      width: 30%;
+      width: 100%;
 
       [type='checkbox']:checked ~ label {
         font-weight: bold;
       }
     }
 
-    .px-theatrical-option-dl,
+    .px-theatrical-option-dl {
+      width: 33.333%;
+    }
+
     .px-theatrical-option-usb {
       text-align: center;
-      width: 23.333%;
+      width: 33.333%;
     }
 
     .px-theatrical-option-qty {
       text-align: right;
-      width: 23.333%;
+      width: 33.333%;
 
       .form-inline {
         justify-content: flex-end;
@@ -204,11 +225,15 @@ export default {
       [type='number'] {
         width: 3rem;
       }
+
+      &.hidden {
+        visibility: hidden;
+      }
     }
 
     .px-theatrical-option-recipients {
       width: 100%;
-      padding: 1rem 0;
+      padding: 1rem 0 0;
 
       .list-group {
         margin-bottom: 1rem;

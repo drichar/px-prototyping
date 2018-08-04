@@ -13,13 +13,13 @@
           <div class="col">
             <ul class="list-group">
               <li class="list-group-item">
-                <code>COMING SOONISH</code>
+                <strong>Coming Soonish</strong>
                 <svg v-b-tooltip.hover="'COMING_SOON_FILE.mp4'" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
                   <path d="M14.568.074c2.202 1.174 5.938 4.885 7.432 6.882-1.286-.899-4.044-1.657-6.091-1.179.222-1.468-.185-4.535-1.341-5.703zm7.432 10.926v13h-20v-24h8.409c4.857 0 3.335 8 3.335 8 3.009-.745 8.256-.42 8.256 3zm-7 3.508l-6-3.528v7.02l6-3.492z"/>
                 </svg>
               </li>
               <li class="list-group-item">
-                <code>NOW PLAYING</code>
+                <strong>Now Playing</strong>
                 <svg v-b-tooltip.hover="'NOW_PLAYING_FILE.mp4'" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
                   <path d="M14.568.074c2.202 1.174 5.938 4.885 7.432 6.882-1.286-.899-4.044-1.657-6.091-1.179.222-1.468-.185-4.535-1.341-5.703zm7.432 10.926v13h-20v-24h8.409c4.857 0 3.335 8 3.335 8 3.009-.745 8.256-.42 8.256 3zm-7 3.508l-6-3.528v7.02l6-3.492z"/>
                 </svg>
@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col">
             <div class="px-drop-zone">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.744 8s1.522-8-3.335-8h-8.409v24h20v-13c0-3.419-5.247-3.745-8.256-3zm-5.744 11h-1v-1h1v1zm0-2h-1v-1h1v1zm0-2h-1v-1h1v1zm0-2h-1v-1h1v1zm7 6h-6v-3h6v3zm0-4h-6v-3h6v3zm2 4h-1v-1h1v1zm0-2h-1v-1h1v1zm0-2h-1v-1h1v1zm0-2h-1v-1h1v1zm-2.432-12.925c2.202 1.174 5.938 4.883 7.432 6.881-1.286-.9-4.044-1.657-6.091-1.179.222-1.468-.185-4.534-1.341-5.702z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.568.074c2.202 1.174 5.938 4.885 7.432 6.882-1.286-.899-4.044-1.657-6.091-1.179.222-1.468-.185-4.535-1.341-5.703zm7.432 10.926v13h-20v-24h8.409c4.857 0 3.335 8 3.335 8 3.009-.745 8.256-.42 8.256 3zm-7 3.508l-6-3.528v7.02l6-3.492z"/></svg>
               Drop files here
             </div>
           </div>
@@ -64,6 +64,12 @@ export default {
 #OrderQueueTags {
   .list-group {
     margin-bottom: 1rem;
+
+    .list-group-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     svg {
       margin-left: 0.5rem;
@@ -97,12 +103,12 @@ export default {
     border: 0.125rem dashed #ddd;
     border-radius: 0.25rem;
     color: #ddd;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 
     svg {
-      width: 2rem;
-      height: 2rem;
-      margin: 0 0.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: 0 0.625rem;
 
       path {
         fill: #ddd;

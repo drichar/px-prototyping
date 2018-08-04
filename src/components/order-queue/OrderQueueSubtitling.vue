@@ -192,12 +192,12 @@ export default {
     border: 0.125rem dashed #ddd;
     border-radius: 0.25rem;
     color: #ddd;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 
     svg {
-      width: 2rem;
-      height: 2rem;
-      margin: 0 0.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: 0 0.625rem;
 
       path {
         fill: #ddd;
