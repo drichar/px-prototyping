@@ -5,7 +5,7 @@
         @click="showCollapse = true"
         :class="showCollapse ? 'collapsed' : null"
         aria-controls="OrderQueueUsageBroadcast"
-        :aria-expanded="showCollapse ? 'true' : 'false'">Broadcast Settings</a>
+        :aria-expanded="showCollapse ? 'true' : 'false'">Broadcast Options</a>
     </b-card-header>
     <b-collapse id="OrderQueueUsageBroadcast" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>

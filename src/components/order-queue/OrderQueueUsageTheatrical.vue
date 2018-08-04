@@ -5,7 +5,7 @@
         @click="showCollapse = true"
         :class="showCollapse ? 'collapsed' : null"
         aria-controls="OrderQueueUsageTheatrical"
-        :aria-expanded="showCollapse ? 'true' : 'false'">Theatrical Settings</a>
+        :aria-expanded="showCollapse ? 'true' : 'false'">Theatrical Options</a>
     </b-card-header>
     <b-collapse id="OrderQueueUsageTheatrical" v-model="showCollapse" accordion="my-accordion" role="tabpanel">
       <b-card-body>
