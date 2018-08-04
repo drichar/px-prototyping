@@ -1,7 +1,14 @@
 <template lang="html">
   <div class="px-sidebar">
     <div class="px-sidebar-order-overview">
-      <div class="px-sidebar-order-card card" v-for="item in [1,2,3]" :key="item">
+      <div class="px-sidebar-order-card card">
+        <img class="card-img-top" src="http://placehold.it/640x400/?text=Preview" alt="" />
+        <div class="card-body">
+          <p class="card-text asset-name">Glossy Bastard Int'l 20</p>
+          <p class="card-text project-name">City of Lies</p>
+        </div>
+      </div>
+      <div class="px-sidebar-order-card card" v-for="item in [1,2]" :key="item">
         <img class="card-img-top" src="http://placehold.it/640x400/?text=Preview" alt="" />
         <div class="card-body">
           <p class="card-text asset-name">Asset Name</p>
@@ -23,8 +30,8 @@ export default {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-between;
-  background: hsla(0,0,0,0.625);
+  justify-content: flex-start;
+  background: hsla(0,0,0,0.75);
   width: 0;
 
   > * {
@@ -32,11 +39,20 @@ export default {
   }
 
   @media (min-width: 1200px) {
-    width: 12rem;
+    width: 14rem;
 
     > * {
       display: block;
     }
+  }
+
+  h5 {
+    color: white;
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 0;
+    line-height: 2rem;
   }
 
   .px-sidebar-order-overview {
@@ -60,7 +76,15 @@ export default {
       }
 
       &:first-child {
-        border: 2px solid blue;
+        background: #007bff;
+        border: 2px solid #007bff;
+        color: white;
+
+        .card-text {
+          &.asset-name {
+            font-weight: bold;
+          }
+        }
       }
     }
   }

@@ -44,7 +44,7 @@ export default {
     }
 
     &:nth-child(2) {
-      background: hsla(0,0,100,0.25);
+      background: hsla(0,0,100,0.1875);
     }
   }
 }
