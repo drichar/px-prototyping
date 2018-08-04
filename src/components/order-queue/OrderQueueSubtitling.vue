@@ -300,7 +300,7 @@ $switch-transition: .2s all !default;
       outline: none;
       user-select: none;
       vertical-align: middle;
-      text-indent: calc(calc(#{$switch-height} * 2) + 0.625rem);
+      text-indent: calc(calc(#{$switch-height} * 2) + 1rem);
 
       .badge {
         margin-left: 0.25rem;
