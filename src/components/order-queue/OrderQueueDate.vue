@@ -45,4 +45,10 @@ export default {
 </script>
 
 <style lang="scss">
+#OrderQueueDate {
+  .bootstrap-datetimepicker-widget table td.active {
+    background: #007bff;
+    color: white;
+  }
+}
 </style>
