@@ -30,7 +30,7 @@
               <b-form-group label="Dialogue">
                 <b-form-radio-group id="OrderQueueSubtitlingDialogue"
                   buttons
-                  button-variant="outline-primary"
+                  button-variant="light"
                   v-model="dialogue.selected"
                   :options="dialogue.options"
                   name="OrderQueueSubtitlingDialogue" />
@@ -42,7 +42,7 @@
               <b-form-group label="Narration">
                 <b-form-radio-group id="OrderQueueSubtitlingNarration"
                   buttons
-                  button-variant="outline-primary"
+                  button-variant="light"
                   v-model="narration.selected"
                   :options="narration.options"
                   name="OrderQueueSubtitlingNarration" />
@@ -54,7 +54,7 @@
               <b-form-group label="Graphics">
                 <b-form-radio-group id="OrderQueueSubtitlingGraphics"
                   buttons
-                  button-variant="outline-primary"
+                  button-variant="light"
                   v-model="graphics.selected"
                   :options="graphics.options"
                   name="OrderQueueSubtitlingGraphics" />
@@ -204,159 +204,165 @@ export default {
       }
     }
   }
-}
 
-.px-order-queue-dng {
-  position: relative;
+  .px-order-queue-dng {
+    position: relative;
 
-  .px-order-queue-autosubs {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-    background: white;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
-
-    &.visible {
-      display: flex;
-    }
-
-    svg {
-      width: 5rem;
-      height: 5rem;
-      margin: 1rem;
-
-      path {
-        fill: black;
-      }
-    }
-
-    p {
-      text-align: center;
-    }
-  }
-}
-
-.btn-group {
-  width: 100%;
-
-  > .btn {
-    flex: 0 1 100% !important;
-  }
-}
-
-$font-size-base: 1rem;
-$input-height: 2.375rem;
-$input-btn-focus-width: .2rem;
-$custom-control-indicator-bg: #dee2e6;
-$custom-control-indicator-disabled-bg: #e9ecef;
-$custom-control-description-disabled-color: #868e96;
-$white: white;
-$theme-colors: (
-  'primary': #007bff
-);
-
-$switch-height: calc(#{$input-height} * .8) !default;
-$switch-border-radius: $switch-height !default;
-$switch-bg: $custom-control-indicator-bg !default;
-$switch-checked-bg: map-get($theme-colors, 'primary') !default;
-$switch-disabled-bg: $custom-control-indicator-disabled-bg !default;
-$switch-disabled-color: $custom-control-description-disabled-color !default;
-$switch-thumb-bg: $white !default;
-$switch-thumb-border-radius: 50% !default;
-$switch-thumb-padding: 2px !default;
-$switch-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(map-get($theme-colors, 'primary'), .25);
-$switch-transition: .2s all !default;
-
-.switch {
-  font-size: $font-size-base;
-  position: relative;
-
-  input {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    background: none;
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
-    padding: 0;
-
-    & + label {
-      position: relative;
-      min-width: calc(#{$switch-height} * 2);
-      border-radius: $switch-border-radius;
-      height: $switch-height;
-      line-height: $switch-height;
-      display: inline-block;
-      cursor: pointer;
-      outline: none;
-      user-select: none;
-      vertical-align: middle;
-      text-indent: calc(calc(#{$switch-height} * 2) + 1rem);
-
-      .badge {
-        margin-left: 0.25rem;
-        margin-top: -0.25rem;
-        text-indent: 0;
-      }
-    }
-
-    & + label::before,
-    & + label::after {
-      content: '';
+    .px-order-queue-autosubs {
       position: absolute;
       top: 0;
       left: 0;
-      width: calc(#{$switch-height} * 2);
-      bottom: 0;
-      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      background: white;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      display: none;
+
+      &.visible {
+        display: flex;
+      }
+
+      svg {
+        width: 5rem;
+        height: 5rem;
+        margin: 1rem;
+
+        path {
+          fill: black;
+        }
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .btn-group {
+    width: 100%;
+
+    .btn {
+      flex: 0 1 100% !important;
     }
 
-    & + label::before {
-      right: 0;
-      background-color: $switch-bg;
-      border-radius: $switch-border-radius;
-      transition: $switch-transition;
+    .btn-light:not(:disabled):not(.disabled).active {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: white;
     }
+  }
 
-    & + label::after {
-      top: $switch-thumb-padding;
-      left: $switch-thumb-padding;
-      width: calc(#{$switch-height} - calc(#{$switch-thumb-padding} * 2));
-      height: calc(#{$switch-height} - calc(#{$switch-thumb-padding} * 2));
-      border-radius: $switch-thumb-border-radius;
-      background-color: $switch-thumb-bg;
-      transition: $switch-transition;
-    }
+  $font-size-base: 1rem;
+  $input-height: 2.375rem;
+  $input-btn-focus-width: .2rem;
+  $custom-control-indicator-bg: #dee2e6;
+  $custom-control-indicator-disabled-bg: #e9ecef;
+  $custom-control-description-disabled-color: #868e96;
+  $white: white;
+  $theme-colors: (
+    'primary': #007bff
+  );
 
-    &:checked + label::before {
-      background-color: $switch-checked-bg;
-    }
+  $switch-height: calc(#{$input-height} * .8) !default;
+  $switch-border-radius: $switch-height !default;
+  $switch-bg: $custom-control-indicator-bg !default;
+  $switch-checked-bg: map-get($theme-colors, 'primary') !default;
+  $switch-disabled-bg: $custom-control-indicator-disabled-bg !default;
+  $switch-disabled-color: $custom-control-description-disabled-color !default;
+  $switch-thumb-bg: $white !default;
+  $switch-thumb-border-radius: 50% !default;
+  $switch-thumb-padding: 2px !default;
+  $switch-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(map-get($theme-colors, 'primary'), .25);
+  $switch-transition: .2s all !default;
 
-    &:checked + label::after {
-      margin-left: $switch-height;
-    }
+  .switch {
+    font-size: $font-size-base;
+    position: relative;
 
-    &:focus + label::before {
-      outline: none;
-      box-shadow: $switch-focus-box-shadow;
-    }
+    input {
+      position: absolute;
+      height: 1px;
+      width: 1px;
+      background: none;
+      border: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      overflow: hidden;
+      padding: 0;
 
-    &:disabled + label {
-      color: $switch-disabled-color;
-      cursor: not-allowed;
-    }
+      & + label {
+        position: relative;
+        min-width: calc(#{$switch-height} * 2);
+        border-radius: $switch-border-radius;
+        height: $switch-height;
+        line-height: $switch-height;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+        vertical-align: middle;
+        text-indent: calc(calc(#{$switch-height} * 2) + 1rem);
 
-    &:disabled + label::before {
-      background-color: $switch-disabled-bg;
+        .badge {
+          margin-left: 0.25rem;
+          margin-top: -0.25rem;
+          text-indent: 0;
+        }
+      }
+
+      & + label::before,
+      & + label::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(#{$switch-height} * 2);
+        bottom: 0;
+        display: block;
+      }
+
+      & + label::before {
+        right: 0;
+        background-color: $switch-bg;
+        border-radius: $switch-border-radius;
+        transition: $switch-transition;
+      }
+
+      & + label::after {
+        top: $switch-thumb-padding;
+        left: $switch-thumb-padding;
+        width: calc(#{$switch-height} - calc(#{$switch-thumb-padding} * 2));
+        height: calc(#{$switch-height} - calc(#{$switch-thumb-padding} * 2));
+        border-radius: $switch-thumb-border-radius;
+        background-color: $switch-thumb-bg;
+        transition: $switch-transition;
+      }
+
+      &:checked + label::before {
+        background-color: $switch-checked-bg;
+      }
+
+      &:checked + label::after {
+        margin-left: $switch-height;
+      }
+
+      &:focus + label::before {
+        outline: none;
+        box-shadow: $switch-focus-box-shadow;
+      }
+
+      &:disabled + label {
+        color: $switch-disabled-color;
+        cursor: not-allowed;
+      }
+
+      &:disabled + label::before {
+        background-color: $switch-disabled-bg;
+      }
     }
   }
 }
