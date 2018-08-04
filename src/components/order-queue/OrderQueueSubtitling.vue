@@ -72,7 +72,10 @@
           <div class="row mb-2" v-if="subtitlesSelected() && !checked && subtitleProvider === 'upload'">
             <div class="col">
               <div class="form-group">
-                <b-form-file v-model="file" :state="Boolean(file)" placeholder="Select/drop script to upload"></b-form-file>
+                <div class="px-drop-zone">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.744 8s1.522-8-3.335-8h-8.409v24h20v-13c0-3.419-5.247-3.745-8.256-3zm.256 11h-8v-1h8v1zm4-3h-12v-1h12v1zm0-3h-12v-1h12v1zm-3.432-12.925c2.202 1.174 5.938 4.883 7.432 6.881-1.286-.9-4.044-1.657-6.091-1.179.222-1.468-.185-4.534-1.341-5.702z"/></svg>
+                  Drop files here
+                </div>
               </div>
             </div>
           </div>
@@ -179,6 +182,30 @@ export default {
 </script>
 
 <style lang="scss">
+#OrderQueueSubtitling {
+  .px-drop-zone {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    border: 0.125rem dashed #ddd;
+    border-radius: 0.25rem;
+    color: #ddd;
+    font-size: 1.25rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      margin: 0 0.5rem;
+
+      path {
+        fill: #ddd;
+      }
+    }
+  }
+}
+
 .px-order-queue-dng {
   position: relative;
 
