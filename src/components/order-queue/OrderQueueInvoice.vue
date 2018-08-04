@@ -198,7 +198,6 @@ export default {
   .px-order-invoice-total {
     background: hsla(0,0,0,0.025);
     padding: 1rem 1.5rem;
-    position: relative;
 
     .table {
       margin: 0;
@@ -215,16 +214,6 @@ export default {
           width: 6rem;
         }
       }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: -3rem;
-      left: 0;
-      right: 1rem;
-      height: 3rem;
-      background: linear-gradient(to bottom, hsla(0,0,96,0) 0%, hsla(0,0,96,1) 100%);
     }
   }
 

@@ -1,7 +1,7 @@
 <template lang="html">
   <div id="OrderQueuePresets">
     <b-alert show dismissible>
-      Would you like to apply settings from a previous order?
+      <span>Would you like to apply settings from a previous order?</span>
       <b-btn size="sm" variant="info" v-b-modal.presets>Select a Preset</b-btn>
     </b-alert>
 
@@ -154,7 +154,17 @@ export default {
   .alert {
     margin: 0 1.5rem 1.5rem;
 
+    span {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
     @media (min-width: 1600px) {
+      span {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+
       .btn {
         float: right;
         margin-top: -3px;
