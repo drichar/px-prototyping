@@ -1,11 +1,14 @@
 <template lang="html">
   <div id="OrderQueuePresets">
-    <b-alert variant="primary" show dismissible>
+    <b-alert variant="primary" show dismiss="Dismiss">
       <span>Would you like to apply settings from a previous&nbsp;order?</span>
-      <b-btn size="sm" variant="primary" v-b-modal.presets>Select a Preset</b-btn>
+      <div class="actions">
+        <b-btn size="sm" variant="light" v-b-modal.presets>Dismiss</b-btn>
+        <b-btn size="sm" variant="primary" v-b-modal.presets>Select a Preset</b-btn>
+      </div>
     </b-alert>
 
-    <b-modal id="presets" title="Select a Preset" size="lg" cancel-variant="outline-primary" ok-title="Apply Settings">
+    <b-modal id="presets" title="Select a Preset" size="lg" cancel-variant="light" ok-title="Apply Settings">
       <b-card no-body>
         <b-tabs pills card vertical>
           <b-tab title="Order #PX123ABC" active>
@@ -153,21 +156,35 @@ export default {
 #OrderQueuePresets {
   .alert {
     margin: 0 1.5rem 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
 
     span {
       display: block;
+      flex: 0 0 auto;
+      width: 100%;
       margin-bottom: 0.5rem;
     }
 
-    @media (min-width: 1600px) {
-      span {
-        display: inline-block;
-        margin-bottom: 0;
-      }
+    .actions {
+      flex: 0 0 auto;
+      display: grid;
+      grid-template: auto / auto auto;
+      grid-gap: 0.5rem;
 
       .btn {
-        float: right;
-        margin-top: -3px;
+        margin: 0;
+      }
+    }
+
+    @media (min-width: 1800px) {
+      justify-content: space-between;
+
+      span {
+        width: auto;
+        margin-bottom: 0;
       }
     }
   }
